@@ -1,3 +1,15 @@
+## Use Docker
+
+First, build with compose
+```bash
+docker-compose up --build
+```
+
+And after, in other times
+```bash
+docker-compose up
+```
+
 ## Getting Started
 
 First, run the development server:
