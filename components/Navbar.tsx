@@ -10,7 +10,8 @@ const Navbar = () => {
   const pathname = usePathname();
 
   const links = [
-    { name: "Início", href: "/" }
+    { name: "Início", href: "/" },
+    { name: "Produtos", href: "/products" }
   ];
 
   return (
