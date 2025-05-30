@@ -9,8 +9,9 @@ And after, in other times
 ```bash
 docker-compose up
 ```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Getting Started
+## Or without Docker
 
 First, run the development server:
 
