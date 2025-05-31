@@ -1,5 +1,6 @@
 "use client";
 
+import Button from "@/components/Button";
 import { Product } from "@/types";
 
 interface ProductsTableProps {
@@ -29,9 +30,7 @@ export default function ProductsTable({ products }: ProductsTableProps) {
               <td className="px-6 py-4">{product.availableAmount || 0}/{product.minimumAmount || 0}</td>
               <td className="px-6 py-4">{product.address || "Indisponível"}</td>
               <td className="px-6 py-4">
-                <a href="#" className="rounded-md bg-slate-800 text-white px-4 py-2 text-sm hover:bg-slate-700">
-                  Ver
-                </a>
+                <Button text="Ver" path="#" />
               </td>
             </tr>
           ))}

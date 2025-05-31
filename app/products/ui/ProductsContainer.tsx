@@ -4,6 +4,7 @@ import { useRef, useEffect, useState } from "react";
 import { Product } from "@/types";
 import { getFilteredProducts } from "../usecases/getFilteredProducts";
 import ProductsTable from "./ProductsTable";
+import Button from "@/components/Button";
 
 export default function ProductsContainer() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -20,9 +21,12 @@ export default function ProductsContainer() {
 
   return (
     <>
-      <div className="text-left w-full mb-4">
-        <h3 className="text-4xl font-semibold text-slate-800">Produtos</h3>
-        <p className="text-slate-500 mb-5">Exemplo de uma lista de produtos. Você também pode filtrar.</p>
+      <div className="flex flex-wrap items-center justify-between text-left w-full mb-4">
+        <div>
+          <h3 className="text-4xl font-semibold text-slate-800">Produtos</h3>
+          <p className="text-slate-500 mb-5">Exemplo de uma lista de produtos. Você também pode filtrar.</p>
+        </div>
+        <Button text="Cadastrar" path="/" />
       </div>
 
       <div className="flex flex-wrap gap-4 mb-4">
